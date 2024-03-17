@@ -1,0 +1,38 @@
+package QLSV;
+
+import QLSV.ListNV;
+
+public class Main {
+		public static void main (String[] agrs) {
+//			ListNV ls= new ListNV();
+//			ls.inputs();
+//			ls.outputs();
+			menu();
+		}
+		
+		public static void menu() {
+			Scanner sc = new Scanner(System.in);
+			ListNV ls= new ListNV();
+			int choice= 0 ;
+			System.out.println("-------------menu-------------");
+			System.out.println("1. Nhập danh sách nhân viên.(Lưu vào và đọc file)");
+			System.out.println("2. Xuất danh sách nhân viên.");
+			System.out.println("---------------------------");
+			System.out.print("Bạn chọn:");
+			
+			while (true) {
+				switch (choice){
+					case 1: ls.inputs();
+						break;
+					
+					case 2: ls.outputs();
+						break;
+				
+					
+				
+				
+				}
+				
+			}
+		}
+}

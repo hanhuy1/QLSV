@@ -1,0 +1,10 @@
+package QLSV;
+
+public class Main {
+		public static void main (String[] agrs) {
+			ListNV ls= new ListNV();
+			ls.inputs();
+			ls.output();
+			
+		}
+}

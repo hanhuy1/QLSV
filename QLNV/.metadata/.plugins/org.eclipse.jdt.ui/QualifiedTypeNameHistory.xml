@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="QLSV.Fix"/>
+    <fullyQualifiedTypeName name="QLSV.QuanLyNv"/>
+    <fullyQualifiedTypeName name="javax.lang.model.element.QualifiedNameable"/>
+    <fullyQualifiedTypeName name="java.text.BreakIterator"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.ReferenceUriSchemesSupported"/>
+    <fullyQualifiedTypeName name="java.sql.PseudoColumnUsage"/>
+    <fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="jdk.internal.classfile.impl.BufferedCodeBuilder.Model"/>
+    <fullyQualifiedTypeName name="com.sun.media.sound.ModelSource"/>
+    <fullyQualifiedTypeName name="javax.swing.ListCellRenderer"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.text.CollationElementIterator"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.lang.invoke.StringConcatFactory"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="QLSV.ListNV"/>
+    <fullyQualifiedTypeName name="QLSV.NhanVien"/>
+</qualifiedTypeNameHistroy>

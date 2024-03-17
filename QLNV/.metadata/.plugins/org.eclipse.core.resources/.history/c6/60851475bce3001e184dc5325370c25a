@@ -1,0 +1,82 @@
+package QLSV;
+
+import java.util.Scanner;
+
+public class Main {
+		public static Scanner scanner = new Scanner(System.in);
+		
+		public static void main(String[] args) {
+			String choose = null;
+			boolean exit = false;
+			
+			QuanLyNv quanLyNv = new QuanLyNv();
+			int NhanvienID;
+			
+			//show menu
+			 showMenu();
+			 while (true) {
+				 choose = scanner.nextLine();
+				 switch (choose) {
+				case "1": 
+					quanLyNv.add();
+					break;
+				
+				case "2": 
+					quanLyNv.show();
+					break;
+					
+				case "3":
+					NhanvienID = quanLyNv.inputId();
+					quanLyNv.show();
+					break;
+					
+				case"4":
+					NhanvienID = quanLyNv.inputId();
+					quanLyNv.delete();
+					break;
+					
+				case"5":
+					NhanvienID = quanLyNv.inputId();
+					quanLyNv.edit(NhanvienID);
+					break;
+					
+				case"6":
+					quanLyNv.TimNVTheoLuong();
+					break;
+					
+				case"7":
+					quanLyNv.NhanVienTen();
+					break;
+				
+				case"8":
+					quanLyNv.ThuNhapNV();
+					break;
+				
+				case"9":
+					quanLyNv.TimNVTheoLuong();
+					
+					
+				}
+				default:
+					throw new IllegalArgumentException("Unexpected value: " + choose);
+				}
+				
+			}
+			
+		} 
+			public static void showMenu(){
+				System.out.println("------------menu------------");
+				System.out.println("1. Add nhân viên");
+				System.out.println("2. Xuất danh sách nhân viên");
+				System.out.println("3. Tìm và hiển thị nhân viên theo mã");
+				System.out.println("4. Xoá nhân viên theo mã");
+				System.out.println("5. Update nhân viên theo mã");
+				System.out.println("6. Tìm các nhân viên theo khoảng lương");
+				System.out.println("7. Sắp xết nhân viên theo họ tên");
+				System.out.println("8. Sắp xếp nhân viên theo thu nhập");
+				System.out.println("9. Xuất 5 nhân viên có thu nhập cao nhất");
+
+			}
+		
+		
+}

@@ -1,0 +1,51 @@
+package QLSV;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ListNV {
+	static ArrayList<NhanVien> listNV=new ArrayList<>();
+	public void inputs () {
+		Scanner sc = new Scanner(System.in);
+		String choice="yes";
+		do {
+			NhanVien nv = new NhanVien();
+			nv.input();
+			listNV.add(nv);
+			System.out.println("Bạn muốn tiếp tục? (yes/no)");
+			choice = sc.next();
+		}while(choice.equalsIgnoreCase("yes"));
+	}
+	public void  outputs (){
+		for(NhanVien nhanVien: listNV) {
+			nhanVien.output();
+		}
+		
+	}
+		
+	public int FindbyID(String MaNV) {
+		for (int i = 0; i < listNV.size(); i++) {
+			NhanVien nv=listNV.get(i);
+			if (nv.getMaNv().equalsIgnoreCase(MaNV)) {
+				System.out.println("Đã tìm thấy tại vị trí: "+i);
+				nv.output();
+				return i;
+			}
+			
+		}
+		return -1;
+	}
+	
+	public void delById(String MaNV) {
+		int position = FindbyID(MaNV);
+		if(position < 0) {
+			System.out.println("Không tìm thấy nhân viên để xoá");
+		}else {
+			listNV.remove(position);
+			System.out.print("Đã xoá nhân viên tại vị trí: "+position);
+		}
+		
+	}
+	
+}

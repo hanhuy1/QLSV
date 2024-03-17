@@ -1,0 +1,66 @@
+package QLSV;
+
+import java.util.Scanner;
+
+public class NhanVien {
+		private String MaNV;
+		private String HoTen;
+		private double luong;
+		
+		public NhanVien() {
+		}
+		
+		public NhanVien(String MaNv, String Hoten, double luong) {
+			this.MaNV = MaNv;
+			this.HoTen = HoTen;
+			this.luong= luong;
+			
+		}
+		
+		public String getMaNV() {
+			return getMaNV();
+		}
+		
+		public void setMaNV ( String MaNV) {
+			this.MaNV = MaNV;
+		}
+		
+		public String getHoten() {
+			return HoTen;
+		}
+		
+		public void setHoten(String HoTen) {
+			this.HoTen = HoTen;
+		}
+		
+		public double getluong() {
+			return luong;
+		}
+		
+		public void setluong(double luong) {
+			this.luong = luong;
+		}
+		
+		public void input() {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("MaNV: ");
+			setMaNV(sc.next());
+			System.out.println("Ho Ten: ");
+			setHoten(sc.nextLine());
+			System.out.println("Luong: ");
+			setluong(sc.nextDouble());
+			
+		}
+		
+		 public void output() {
+			 System.out.println("=>"+getMaNV()+"-"+getHoten()+"-"+getluong());
+			 
+		 }
+		 
+		public static void main(String[] agrs) {
+			NhanVien nv=new NhanVien();
+			nv.input();
+			
+		}
+		
+}
